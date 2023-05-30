@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TugasUTSGenap2023AKBIF510120172</string>
+    <string name="profil">Profil</string>
+    <string name="catat">Catat</string>
+    <string name="info">Home</string>
+    <string name="nama">Silvyani Nurlaila Husnina Fajrin</string>
+    <string name="kelas">IF-5</string>
+    <string name="nim">10120172</string>
+    <string name="email">silvyani.10120172@mahasiswa.unikom.ac.id</string>
+    <string name="txt_welcome">Welcome</string>
+    <string name="txt_intro">Tulis yang kamu pikirkan kapanpun dan dimanapun</string>
+    <string name="page1">Page 1 of 2</string>
+    <string name="page2">Page 2 of 2</string>
+    <string name="page3">Page 3 of 3</string>
+    <string name="memo">Catat</string>
+    <string name="penjelasan">Klik tombol + untuk mencatat</string>
+    <string name="txt_add">Catat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_note">AddNoteActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
