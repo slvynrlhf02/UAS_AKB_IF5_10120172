@@ -21,4 +21,11 @@
         android:title="@string/profil"
         android:iconTint="#FFC4D0"
         />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/baseline_logout_24"
+        android:title="Logout"
+        android:iconTint="#FFC4D0"
+        />
 </menu>

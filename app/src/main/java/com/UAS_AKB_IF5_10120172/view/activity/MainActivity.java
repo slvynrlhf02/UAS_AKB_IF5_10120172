@@ -1,5 +1,7 @@
 package com.UAS_AKB_IF5_10120172.view.activity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -55,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
                             R.id.profile:
                         fragment = new ProfileFragment();
                         break;
+                    case
+                            R.id.logout:
+                        showLogoutConfirmationDialog();
+                        break;
                 }
                 return getFragmentPage(fragment);
             }
@@ -82,6 +88,31 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return false;
+    }
+
+    private void showLogoutConfirmationDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Konfirmasi Logout");
+        builder.setMessage("Apakah Anda yakin ingin logout?");
+        builder.setPositiveButton("Logout", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                logout();
+            }
+        });
+        builder.setNegativeButton("Batal", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // Do nothing, dismiss the dialog
+            }
+        });
+        builder.create().show();
+    }
+
+    private void logout() {
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(MainActivity.this,LoginActivity.class));
+        finish();
     }
 }
 
