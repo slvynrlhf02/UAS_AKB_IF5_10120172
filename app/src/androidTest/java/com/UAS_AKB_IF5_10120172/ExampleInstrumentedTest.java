@@ -1,4 +1,4 @@
-package com.TugasUTSGenap2023AKBIF510120172;
+package com.UAS_AKB_IF5_10120172;
 
 import android.content.Context;
 
@@ -24,3 +24,7 @@ public class ExampleInstrumentedTest {
         assertEquals("com.TugasUTSGenap2023AKBIF10120172", appContext.getPackageName());
     }
 }
+
+// 10120172
+// Silvyani Nurlaila Husnina Fajrin
+// IF5

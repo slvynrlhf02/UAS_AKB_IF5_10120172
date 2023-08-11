@@ -1,4 +1,4 @@
-package com.TugasUTSGenap2023AKBIF510120172;
+package com.UAS_AKB_IF5_10120172;
 
 import org.junit.Test;
 

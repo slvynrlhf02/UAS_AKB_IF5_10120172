@@ -1,5 +1,6 @@
-package com.TugasUTSGenap2023AKBIF510120172.view.activity;
+package com.UAS_AKB_IF5_10120172.view.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -8,15 +9,19 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.TugasUTSGenap2023AKBIF510120172.R;
-import com.TugasUTSGenap2023AKBIF510120172.view.fragment.InfoFragment;
-import com.TugasUTSGenap2023AKBIF510120172.view.fragment.NoteFragment;
-import com.TugasUTSGenap2023AKBIF510120172.view.fragment.ProfileFragment;
+import com.UAS_AKB_IF5_10120172.R;
+import com.UAS_AKB_IF5_10120172.view.fragment.InfoFragment;
+import com.UAS_AKB_IF5_10120172.view.fragment.NoteFragment;
+import com.UAS_AKB_IF5_10120172.view.fragment.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
+
+    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+
+        auth = FirebaseAuth.getInstance();
 
         //menampilkan halaman yang pertama muncul
         getFragmentPage(new InfoFragment());
@@ -54,6 +61,18 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = auth.getCurrentUser();
+        if (currentUser == null) {
+            // Not signed in, launch the Login activity
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+        }
+    }
+
     private boolean getFragmentPage(Fragment fragment){
         if (fragment != null){
             getSupportFragmentManager()
@@ -65,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 }
-
 
 // 10120172
 // Silvyani Nurlaila Husnina Fajrin

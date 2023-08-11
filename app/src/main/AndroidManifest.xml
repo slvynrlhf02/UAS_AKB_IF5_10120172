@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.TugasUTSGenap2023AKBIF510120172">
+    package="com.UAS_AKB_IF5_10120172">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,9 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TugasUTSGenap2023AKBIF510120205">
-        <activity android:name="com.TugasUTSGenap2023AKBIF510120172.view.activity.AddNoteActivity"></activity>
-        <activity android:name="com.TugasUTSGenap2023AKBIF510120172.view.activity.MainActivity" />
-        <activity android:name="com.TugasUTSGenap2023AKBIF510120172.view.activity.SplashActivity"
+        <activity android:name="com.UAS_AKB_IF5_10120172.view.activity.AddNoteActivity"></activity>
+        <activity android:name="com.UAS_AKB_IF5_10120172.view.activity.MainActivity" />
+        <activity android:name="com.UAS_AKB_IF5_10120172.view.activity.LoginActivity" />
+        <activity android:name="com.UAS_AKB_IF5_10120172.view.activity.RegisterActivity" />
+
+        <activity android:name="com.UAS_AKB_IF5_10120172.view.activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.TugasUTSGenap2023AKBIF510120172.view.fragment;
+package com.UAS_AKB_IF5_10120172.view.fragment;
 
 import android.os.Bundle;
 
@@ -12,9 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.TugasUTSGenap2023AKBIF510120172.view.activity.MainActivity;
-import com.TugasUTSGenap2023AKBIF510120172.R;
-import com.TugasUTSGenap2023AKBIF510120172.adapter.InfoFragmentAdapter;
+import com.UAS_AKB_IF5_10120172.view.activity.MainActivity;
+import com.UAS_AKB_IF5_10120172.R;
+import com.UAS_AKB_IF5_10120172.adapter.InfoFragmentAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

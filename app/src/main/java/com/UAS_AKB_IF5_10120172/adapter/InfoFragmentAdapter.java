@@ -1,4 +1,4 @@
-package com.TugasUTSGenap2023AKBIF510120172.adapter;
+package com.UAS_AKB_IF5_10120172.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

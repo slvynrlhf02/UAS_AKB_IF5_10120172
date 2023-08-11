@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "788771384175",
+    "firebase_url": "https://catatan-7ba77-default-rtdb.firebaseio.com",
+    "project_id": "catatan-7ba77",
+    "storage_bucket": "catatan-7ba77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788771384175:android:8b37c49d5293fad0b1569a",
+        "android_client_info": {
+          "package_name": "com.UAS_AKB_IF5_10120172"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788771384175-v1kid0nf8fi0o82isrrm2tesi422fk80.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.UAS_AKB_IF5_10120172",
+            "certificate_hash": "ea475999b6dfc57d44df098fbfb4c7e68f543de5"
+          }
+        },
+        {
+          "client_id": "788771384175-oq7m5j3qnis1fi8iqhkdme29vi5hk3ug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHYtFMJEBZRVHySEeP1qwn0rXnfiptfrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788771384175-ehjhb6t7hfv94q7j1ll1pf0mm31pb5od.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

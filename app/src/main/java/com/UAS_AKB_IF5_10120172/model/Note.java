@@ -1,15 +1,23 @@
-package com.TugasUTSGenap2023AKBIF510120172.model;
+package com.UAS_AKB_IF5_10120172.model;
+
+import com.google.firebase.database.Exclude;
 
 import java.io.Serializable;
 
 public class Note implements Serializable {
-    String id;
+
+    @Exclude
+    String id; // This field will be excluded from Firebase Database
     String title;
     String category;
     String desc;
     String date;
 
-    public Note(String id, String title, String category, String desc, String date){
+    public Note() {
+        // Default constructor required for Firebase Database
+    }
+
+    public Note(String id, String title, String category, String desc, String date) {
         this.id = id;
         this.title = title;
         this.category = category;

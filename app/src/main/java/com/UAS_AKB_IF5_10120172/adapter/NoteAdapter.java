@@ -1,4 +1,4 @@
-package com.TugasUTSGenap2023AKBIF510120172.adapter;
+package com.UAS_AKB_IF5_10120172.adapter;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -9,9 +9,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.TugasUTSGenap2023AKBIF510120172.R;
-import com.TugasUTSGenap2023AKBIF510120172.model.Note;
-import com.TugasUTSGenap2023AKBIF510120172.view.activity.AddNoteActivity;
+import com.UAS_AKB_IF5_10120172.R;
+import com.UAS_AKB_IF5_10120172.model.Note;
+import com.UAS_AKB_IF5_10120172.view.activity.AddNoteActivity;
 
 import java.util.List;
 

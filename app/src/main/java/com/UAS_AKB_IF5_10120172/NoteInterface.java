@@ -1,8 +1,8 @@
-package com.TugasUTSGenap2023AKBIF510120172;
+package com.UAS_AKB_IF5_10120172;
 
 import android.database.Cursor;
 
-import com.TugasUTSGenap2023AKBIF510120172.model.Note;
+import com.UAS_AKB_IF5_10120172.model.Note;
 
 public interface NoteInterface {
 

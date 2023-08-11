@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">TugasUTSGenap2023AKBIF510120172</string>
+    <string name="app_name">Note Application</string>
+    <string name="web_client_id">788771384175-oq7m5j3qnis1fi8iqhkdme29vi5hk3ug.apps.googleusercontent.com</string>
     <string name="profil">Profil</string>
     <string name="catat">Catat</string>
     <string name="info">Home</string>
@@ -24,6 +25,4 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
